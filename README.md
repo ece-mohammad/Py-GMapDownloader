@@ -42,6 +42,8 @@ Known Issues:
 
 Future:
 ------
+  - Add logging.
+  - Add a way to know how many requests are left to reach api's request limit.
   - Use multithreading to start stitching the tiles as soon as they are downloaded, and request multiple tiles at the same time.
   - Add `Cancel` button.
   - Add support for more map types (staellite, terrain, etc).
