@@ -1,0 +1,4 @@
+marker: A, color: black, lat:35.87497, long:23.417749
+marker: B, color: red, lat:35.87497, long:26.515893
+marker: C, color: green, lat:34.727331, long:26.515893
+marker: D, color: blue, lat:34.727331, long:23.417749
