@@ -38,6 +38,7 @@ def MainWin():
 		UL_val = Geo.UMTPoint(UL_val[0], UL_val[1], zoom_level)
 		LR_val = Geo.UMTPoint(LR_val[0], LR_val[1], zoom_level)
 		map_ = TR.MapReq(UL_val, LR_val, zoom_level, name=name)
+		print('\n##-----------------------------##\n')
 		print(map_.MAP)
 		map_.RequestTiles()
 		TC.MapImage(map_.MAP.map_width, map_.MAP.map_height, name).open_image()
