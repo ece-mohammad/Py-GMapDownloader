@@ -32,36 +32,4 @@ REQUESTS = 0
 
 if __name__ == '__main__':
 	
-	from pprint import pprint as pp
-	
-	class point():
-		def __init__(self, x,y):
-			self.x, self.y = x,y
-
-	
-	UL = 30.061366, 31.190270
-	LR = 30.056398, 31.199443
-	
-	upper_left = point(*UL)
-	lower_right = point(*LR)
-	
-	markers = {'A':(upper_left.x, upper_left.y),'B':(upper_left.x, lower_right.y),
-			   'C':(lower_right.x, lower_right.y),'D':(lower_right.x, upper_left.y)}
-	
-	pp(markers)
-	
-	markers = { "LAT_1":markers['A'][0],
-				"LONG_1":markers['A'][1],
-				"LAT_2":markers['B'][0],
-				"LONG_2":markers['B'][1],
-				"LAT_3":markers['C'][0],
-				"LONG_3":markers['C'][1],
-				"LAT_4":markers['D'][0],
-				"LONG_4":markers['D'][1]}
-	
-	pp(markers)
-	
-	markers['LABEL'] = 'X'
-	markers['X'] = 'X'
-
-	print(MARKER_FORMAT.format(**markers))
+	pass
