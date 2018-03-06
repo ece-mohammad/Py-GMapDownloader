@@ -34,6 +34,7 @@ Config.py:
 
 Known Issues:
 -------------
+- The GUI hangs when you start downloading a map, you can't clikc on buttons or change text fields untill the script is finishes your map, or interrupted by `Ctrl+C`. You can still minimize or close the window.
   - This script is a memory hog! If the number of tiles is large (700+), it'll take a lot of memory (RAM) during the tile stitching process. The maximum number of tiles depends on how much RAM do you have, it's better not to push it too far though.
   When requesting a map, the program prints on the terminal the number of tiles that will be requested, if the number is too large, you can always `Ctrl+c`.
   - I put a delay between tile requests to not overload the API server with requests (5 sec delay), this makes the process of requesting tiles take quite some time.
