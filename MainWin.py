@@ -33,7 +33,7 @@ def MainWin():
 		if name == "":
 			name = "map"
 		
-		print(name)
+		#print(name)
 		
 		UL_val = Geo.UMTPoint(UL_val[0], UL_val[1], zoom_level)
 		LR_val = Geo.UMTPoint(LR_val[0], LR_val[1], zoom_level)
