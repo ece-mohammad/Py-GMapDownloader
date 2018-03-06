@@ -102,7 +102,7 @@ class TileReq(object):
 		
 		params = self.__dict__
 		api_req = STATIC_GMAPS_REQ.format(**params)
-		print(api_req)
+		#print(api_req)
 		
 		REQUESTS+=1
 		# return api_req	#>>>>> test
