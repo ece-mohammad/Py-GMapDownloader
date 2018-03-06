@@ -20,7 +20,7 @@ class MapImage(object):
 	def open_image(self):
 		
 		fm.GoToWorkDir()
-		print(os.getcwd())
+		#print(os.getcwd())
 		
 		map_img = Image.new("RGB",(self.img_width, self.img_height))
 		
