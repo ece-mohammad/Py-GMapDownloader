@@ -83,7 +83,7 @@ class TileReq(object):
 		self.LONG = center.long
 		self.ZOOM_LEVEL = zoom
 		self.SCALE = scale
-		self.TILE_SIZE = "%dx%d"%(size, size)
+		self.TILE_SIZE = "%dx%d"%(size, size+20)
 		self.API_KEY = API_KEYS[KEY_INDEX]
 		self.http_err = 0
 		self.url_err = 0
