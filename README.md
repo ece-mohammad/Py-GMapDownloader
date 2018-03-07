@@ -48,7 +48,7 @@ Future:
   - Add `Cancel` button.
   - Add support for more map types (staellite, terrain, etc).
   - Add an option to not include markers.
-  - Overlap the images to cover Google's logo everywhere in the map except for the bottom row.
+  - ~~Overlap the images to cover Google's logo everywhere in the map except for the bottom row~~.
   
   *: Increasing the zoom level greatly increases the number of tiles needed to be downloaded - I think the difference is ( 2 ** (2* (zoom_2 - zoom_1) ) ), but I could be wrong! - So, If you need a highly detailed map (streets/buildings zoom level) of a large area, consider breaking it down to multiple smaller areas.
   
