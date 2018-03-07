@@ -22,7 +22,7 @@ class MapImage(object):
 		fm.GoToWorkDir()
 		#print(os.getcwd())
 		
-		map_img = Image.new("RGB",(self.img_width, self.img_height))
+		map_img = Image.new("RGB",(self.img_width, self.img_height+20))
 		
 		for tile in os.listdir():
 			if tile.startswith(self.base_name) and tile.endswith('.png'):
