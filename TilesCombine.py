@@ -26,10 +26,13 @@ class MapImage(object):
 		
 		for tile in os.listdir():
 			if tile.startswith(self.base_name) and tile.endswith('.png'):
-				tile_x, tile_y = map(int, re.findall('\d+', tile))
-				tile_img = Image.open(tile)
-				map_img.paste(tile_img, (tile_y*TILE_SIZE, tile_x*TILE_SIZE,))
-				map_img.save(self.base_name+'.png')
+				res = re.findall('\d+', tile)
+				if res:
+					tile_x, tile_y = map(int, res)
+					del res
+					tile_img = Image.open(tile)
+					map_img.paste(tile_img, (tile_y*TILE_SIZE, tile_x*TILE_SIZE,))
+					map_img.save(self.base_name+'.png')
 				gc.collect()
 		
 		#map_img.save(self.base_name+'.png')
