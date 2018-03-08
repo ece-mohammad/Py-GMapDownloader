@@ -30,6 +30,7 @@ class MapImage(object):
 				if res:
 					tile_x, tile_y = map(int, res)
 					del res
+					print("--> adding the image: {}".format(tile))
 					tile_img = Image.open(tile)
 					map_img.paste(tile_img, (tile_y*TILE_SIZE, tile_x*TILE_SIZE,))
 					map_img.save(self.base_name+'.png')
